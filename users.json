@@ -1,0 +1,50 @@
+[
+  {
+    "surname": "Болгов",
+    "name": "Дмитрий Алексеевич",
+    "email": "moderator@mail.ru",
+    "password": "qwertyuuiop[]",
+    "role": "moderator",
+    "registeredAt": "2025-12-17T18:18:28.694Z"
+  },
+  {
+    "surname": "Болгов",
+    "name": "Дмитрий Алексеевич",
+    "email": "moderator@site.ru",
+    "password": "qwertyuuiop[]",
+    "role": "moderator",
+    "registeredAt": "2025-12-17T18:21:40.037Z"
+  },
+  {
+    "surname": "Рандомный",
+    "name": "Пользователь",
+    "email": "user@mail.ru",
+    "password": "asdfghjkl;'",
+    "role": "user",
+    "registeredAt": "2025-12-17T18:34:09.851Z"
+  },
+  {
+    "surname": "Ванечкин",
+    "name": "Иван Иваныч",
+    "email": "vanechkin@mail.ru",
+    "password": "zxcvbnm,./",
+    "role": "user",
+    "registeredAt": "2025-12-17T19:09:07.669Z"
+  },
+  {
+    "surname": "Кротов",
+    "name": "Артём",
+    "email": "pipidastrik@mail.ru",
+    "password": "1234567890",
+    "role": "user",
+    "registeredAt": "2025-12-17T19:48:22.988Z"
+  },
+  {
+    "surname": "Кротов",
+    "name": "Артём",
+    "email": "pipidastrik2@mail.ru",
+    "password": "1234567890",
+    "role": "user",
+    "registeredAt": "2025-12-17T19:50:51.057Z"
+  }
+]
