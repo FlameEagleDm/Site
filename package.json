@@ -7,17 +7,18 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "grunt dev",
     "build": "grunt build",
-    "watch": "grunt watch"
+    "watch": "grunt watch",
+    "deploy": "grunt -d build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "grunt": "^1.6.1",
     "grunt-contrib-cssmin": "^5.0.0",
     "grunt-contrib-less": "^3.0.0",
     "grunt-contrib-watch": "^1.1.0"
   }
-  
 }
