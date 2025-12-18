@@ -9,7 +9,7 @@
 
 @font-face {
         font-family: 'MontserratAlternates';
-        src: url("MontserratAlternates-Medium.ttf");
+        src: url("../../Resources/MontserratAlternates-Medium.ttf");
 }
 
 // Общие стили
@@ -376,25 +376,26 @@ nav ul li {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1000;
-    display: none;
-}
-
-.modal-content {
     background: @white;
-    border-radius: 15px;
-    padding: 40px;
-    min-width: 400px;
-    max-width: 500px;
+    border-radius: @border-radius;
     box-shadow: 0 10px 40px rgba(0,0,0,0.3);
-}
+    z-index: 1000;
+    max-width: 500px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    display: none;
 
-.modal-title {
-    font-size: 28px;
-    font-weight: 400;
-    color: @text-color;
-    margin-bottom: 30px;
-    text-align: center;
+    &-content {
+        padding: 30px;
+    }
+
+    &-title {
+        font-size: 28px;
+        font-weight: 400;
+        margin-bottom: 25px;
+        color: @text-color;
+    }
 }
 
 .modal-form {
@@ -407,34 +408,25 @@ nav ul li {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    position: relative;
 
     label {
         font-size: 14px;
-        color: @text-color;
         font-weight: 500;
-    }
+        color: @text-color;
 
-    .required {
-        color: #d9534f;
-    }
-
-    .error-message {
-        font-size: 13px;
-        color: #d9534f;
-        margin-top: 4px;
-        display: none;
+        .required {
+            color: #d9534f;
+        }
     }
 }
 
 .form-input {
     padding: 12px 15px;
-    border: 1px solid #ddd;
+    border: 2px solid #ddd;
     border-radius: 8px;
     font-size: 15px;
+    font-family: 'MontserratAlternates';
     transition: border-color @transition;
-    font-family: inherit;
-    resize: vertical;
 
     &:focus {
         outline: none;
@@ -448,11 +440,19 @@ nav ul li {
 
     &.success {
         border-color: #5cb85c;
+        background-color: #f0fff0;
     }
+}
 
-    &[type="file"] {
-        padding: 8px 12px;
-        cursor: pointer;
+.form-group .error-message {
+    color: #d9534f;
+    font-size: 13px;
+    display: none;
+    margin-top: 5px;
+    text-align: left;
+    
+    &:empty {
+        display: none;
     }
 }
 
@@ -651,25 +651,6 @@ nav ul li {
     color: @light-gray;
 }
 
-// Секция "О нас"
-.about-content {
-    background: @white;
-    padding: 30px;
-    border-radius: @border-radius;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    
-    p {
-        font-size: 16px;
-        line-height: 1.8;
-        color: @text-color;
-        margin-bottom: 15px;
-        
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
-}
-
 // Товары
 .category-section {
     margin-top: 60px;
@@ -713,19 +694,10 @@ nav ul li {
     background-position: center;
     background-repeat: no-repeat;
 
-    &.product-1 { background-image: url('../../Resources/Picture1.png'); 
-        height: 400px;
-    }
-    &.product-2 { background-image: url('../../Resources/Picture2.png'); 
-        height: 400px;
-    }
-    &.product-3 { background-image: url('../../Resources/Picture3.png'); 
-        height: 400px;
-    }
-    &.product-4 { background-image: url('../../Resources/Picture4.png'); 
-        background-position: 0 -600px;
-        height: 400px;
-    }
+    &.product-1 { background-image: url('../../Resources/Picture1.png'); }
+    &.product-2 { background-image: url('../../Resources/Picture2.png'); }
+    &.product-3 { background-image: url('../../Resources/Picture3.png'); }
+    &.product-4 { background-image: url('../../Resources/Picture4.png');}
     &.product-5 { background-image: url('../../Resources/Ceramic1.png'); }
     &.product-6 { background-image: url('../../Resources/Ceramic2.png'); }
     &.product-7 { background-image: url('../../Resources/Ceramic3.png'); }
@@ -786,6 +758,84 @@ nav ul li {
     &:hover {
         background: darken(@primary-color, 10%);
     }
+}
+
+// Страница "О нас"
+.about-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.about-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('../../Resources/sl4.png');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: @border-radius;
+    margin: 40px 0;
+    padding: 40px;
+
+    &-title {
+        font-size: 64px;
+        font-weight: 300;
+        color: @white;
+        margin-bottom: 20px;
+        letter-spacing: 2px;
+    }
+
+    &-subtitle {
+        font-size: 28px;
+        font-weight: 300;
+        color: @white;
+        font-style: italic;
+    }
+}
+
+.about-text-section {
+    background: @white;
+    padding: 60px 80px;
+    border-radius: @border-radius;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 60px;
+}
+
+.about-paragraph {
+    font-size: 18px;
+    line-height: 1.8;
+    color: @text-color;
+    margin-bottom: 25px;
+    text-align: left;
+
+    strong {
+        font-weight: 600;
+        color: @primary-color;
+    }
+
+    em {
+        font-style: italic;
+        color: #555;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.about-cta {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 2px solid #e0e0e0;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    color: @primary-color;
 }
 
 // Подвал

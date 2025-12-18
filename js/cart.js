@@ -115,4 +115,46 @@ $(document).ready(function() {
             $(this).text('В корзину за ' + formatPrice(price)).css('background', '');
         }, 1000);
     });
+
+    // Оформление заказа
+    $(document).on('click', '.cart-checkout-btn', function() {
+        if (Object.keys(cart).length === 0) {
+            alert('Корзина пуста! Добавьте товары перед оформлением заказа.');
+            return;
+        }
+
+        // Подсчитываем общую информацию о заказе
+        let totalPrice = 0;
+        let totalItems = 0;
+        let itemsList = [];
+
+        for (let id in cart) {
+            const item = cart[id];
+            totalPrice += item.price * item.quantity;
+            totalItems += item.quantity;
+            itemsList.push(`• ${item.title} (${item.quantity} шт.) - ${formatPrice(item.price * item.quantity)}`);
+        }
+
+        // Формируем сообщение
+        const message = `
+🎉 Спасибо за ваш заказ!
+
+📦 Ваш заказ:
+${itemsList.join('\n')}
+
+📊 Итого: ${totalItems} товар(ов) на сумму ${formatPrice(totalPrice)}
+
+Мы свяжемся с вами в ближайшее время для подтверждения заказа.
+Ожидайте звонка от нашего менеджера!
+
+С уважением,
+команда "Городские руки" 💚
+        `.trim();
+
+        alert(message);
+
+        // Очищаем корзину после оформления
+        cart = {};
+        renderCart();
+    });
 });

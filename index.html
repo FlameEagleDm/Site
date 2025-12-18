@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <a href="#" class="logo">
+        <a href="#" class="logo" id="logo-link">
             <div class="logo-icon">
                 <img src="Resources/brush.png" alt="">
             </div>
@@ -18,9 +18,9 @@
         </a>
         <nav>
             <ul>
-                <li><a href="#hero">Главная</a></li>
-                <li><a href="#top-authors">Авторы</a></li>
-                <li><a href="#about">О нас</a></li>
+                <li><a href="#" id="main-page-link">Главная</a></li>
+                <li><a href="#" id="authors-link">Авторы</a></li>
+                <li><a href="#" id="about-page-link">О нас</a></li>
                 <li class="cart-menu">
                     <a href="#">Корзина</a>
                     <div class="cart-dropdown">
@@ -55,8 +55,8 @@
         </nav>
     </header>
 
-    <div class="main-container">
-        <aside class="sidebar">
+    <div class="main-container" id="main-container">
+        <aside class="sidebar" id="sidebar">
             <div class="sidebar-item">Категории</div>
             <a href="#paintings" class="sidebar-item">Картины</a>
             <a href="#ceramics" class="sidebar-item">Керамика</a>
@@ -65,7 +65,7 @@
             <a href="#gifts" class="sidebar-item">Подарки</a>
         </aside>
 
-        <main class="content">
+        <main class="content" id="main-content">
             <section class="hero" id="hero">
                 <div class="slider">
                     <div class="slide slide-1">
@@ -119,15 +119,6 @@
                 </div>
             </section>
 
-            <!-- Секция "О нас" -->
-            <section id="about" class="category-section">
-                <h2 class="section-title">О нас</h2>
-                <div class="about-content">
-                    <p>Городские руки — это сообщество и платформа, объединяющая местных мастеров и ценителей ручной работы. Мы создаём мост между творцами и всеми, кто любит натуральные товары ремесла.</p>
-                    <p>Наша миссия — поддерживать талантливых ремесленников, сохранять традиции ручного труда и предоставлять покупателям доступ к уникальным изделиям высочайшего качества.</p>
-                </div>
-            </section>
-
             <!-- Категория: Картины (с Vue.js) -->
             <section id="paintings" class="category-section">
                 <h2 class="section-title">Картины</h2>
@@ -167,59 +158,38 @@
                     <div class="loading">Загрузка товаров...</div>
                 </div>
             </section>
-
-            <!-- Все товары -->
-            <section id="all-products" class="category-section" style="display: none;">
-                <h2 class="section-title">Все товары</h2>
-                <div class="products-grid">
-                    <a href="#" class="product-card" data-id="5" data-title="Набор чашек «Утро»" data-price="2400" data-author="Анастасия" data-image="path/to/product5.jpg">
-                        <div class="product-image product-5"></div>
-                        <div class="product-info">
-                            <div class="product-title">Набор чашек «Утро»</div>
-                            <div class="product-description">Уютные керамические чашки для вашего утреннего кофе. Ручная роспись, каждая чашка уникальна.</div>
-                            <div class="product-author">Автор: Анастасия</div>
-                            <button class="product-button add-to-cart">В корзину за 2,400₽</button>
-                        </div>
-                    </a>
-                    <a href="#" class="product-card" data-id="6" data-title="Декоративное блюдо" data-price="3200" data-author="Мария" data-image="path/to/product6.jpg">
-                        <div class="product-image product-6"></div>
-                        <div class="product-info">
-                            <div class="product-title">Декоративное блюдо</div>
-                            <div class="product-description">Красивое блюдо с традиционным орнаментом. Может использоваться как для подачи, так и как декор.</div>
-                            <div class="product-author">Автор: Мария</div>
-                            <button class="product-button add-to-cart">В корзину за 3,200₽</button>
-                        </div>
-                    </a>
-                    <a href="#" class="product-card" data-id="7" data-title="Чайник «Традиция»" data-price="4500" data-author="Дарья" data-image="path/to/product7.jpg">
-                        <div class="product-image product-7"></div>
-                        <div class="product-info">
-                            <div class="product-title">Чайник «Традиция»</div>
-                            <div class="product-description">Классический чайник из белой глины с изящной ручкой. Прекрасно держит тепло.</div>
-                            <div class="product-author">Автор: Дарья</div>
-                            <button class="product-button add-to-cart">В корзину за 4,500₽</button>
-                        </div>
-                    </a>
-                    <a href="#" class="product-card" data-id="8" data-title="Набор мисок" data-price="2800" data-author="Анастасия" data-image="path/to/product8.jpg">
-                        <div class="product-image product-8"></div>
-                        <div class="product-info">
-                            <div class="product-title">Набор мисок</div>
-                            <div class="product-description">Практичные миски разных размеров для повседневного использования. Качественная керамика.</div>
-                            <div class="product-author">Автор: Анастасия</div>
-                            <button class="product-button add-to-cart">В корзину за 2,800₽</button>
-                        </div>
-                    </a>
-                    <a href="#" class="product-card" data-id="9" data-title="Горшок для цветов" data-price="1500" data-author="Мария" data-image="path/to/product9.jpg">
-                        <div class="product-image product-9"></div>
-                        <div class="product-info">
-                            <div class="product-title">Горшок для цветов</div>
-                            <div class="product-description">Стильный керамический горшок с дренажным отверстием. Идеален для комнатных растений.</div>
-                            <div class="product-author">Автор: Мария</div>
-                            <button class="product-button add-to-cart">В корзину за 1,500₽</button>
-                        </div>
-                    </a>
-                </div>
-            </section>
         </main>
+    </div>
+
+    <!-- Страница "О нас" (скрыта по умолчанию) -->
+    <div class="about-page" id="about-page" style="display: none;">
+        <div class="about-hero">
+            <h1 class="about-hero-title">ГОРОДСКИЕ РУКИ</h1>
+            <p class="about-hero-subtitle">Локальное искусство — глобальная ценность</p>
+        </div>
+        
+        <div class="about-text-section">
+            <p class="about-paragraph">
+                <strong>Городские руки</strong> — это не просто магазин. Это сообщество.
+            </p>
+            
+            <p class="about-paragraph">
+                Мы создали эту платформу, потому что верим: настоящее искусство рождается в руках тех, кто рядом. В студенческих мастерских, в домашних углах с мольбертом, в гаражах, превращённых в керамические студии, — повсюду в нашем городе живут талантливые люди, создающие уникальные вещи с душой и смыслом.
+            </p>
+            
+            <p class="about-paragraph">
+                Но часто их работы остаются незамеченными. Мы решили это изменить.
+            </p>
+            
+            <p class="about-paragraph">
+                <strong>Городские руки</strong> — мост между творцами и теми, кто ценит <em>искренность, ручную работу и историю</em> за каждой вещью. Здесь каждый художник, ремесленник или дизайнер может представить свои работы без посредников, а вы — найти не просто товар, а <em>историю, сделанную в вашем городе</em>.
+            </p>
+            
+            <p class="about-paragraph about-cta">
+                Присоединяйтесь к нашему сообществу.<br>
+                Покупайте с душой. Поддерживайте своё.
+            </p>
+        </div>
     </div>
 
     <footer>
@@ -231,7 +201,7 @@
             <div class="footer-section">
                 <h3>КОНТАКТЫ</h3>
                 <p><img src="Resources/telephone.png" alt=""> +7 (800) 123-45-67</p>
-                <p><img src="Resources/email.png" alt=""> urbanhands@hands.ru</p>
+                <p><img src="Resources/email.png" alt=""> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="89fcfbebe8e7e1e8e7edfac9e1e8e7edfaa7fbfc">[email&#160;protected]</a></p>
                 <p><img src="Resources/vk.png" alt=""> @urbonhands</p>
                 <p><img src="Resources/telega.png" alt=""> Городские руки</p>
             </div>
@@ -348,11 +318,13 @@
         </div>
     </div>
 
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="js/utils.js"></script>
     <script src="js/cart.js"></script>
     <script src="js/auth.js"></script>
     <script src="js/products.js"></script>
     <script src="js/product-manager.js"></script>
-    <script src="js/utils.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/navigation.js"></script>
 </body>
 </html>

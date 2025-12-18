@@ -50,7 +50,7 @@ function initPaintingsVue(products) {
             this.loading = false;
         },
         template: `
-            <div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px;">
                 <div v-if="loading" class="loading">Загрузка товаров...</div>
                 <a v-else 
                    v-for="product in products" 
