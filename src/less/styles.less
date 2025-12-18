@@ -7,6 +7,11 @@
 @border-radius: 10px;
 @transition: 0.3s ease;
 
+@font-face {
+        font-family: 'MontserratAlternates';
+        src: url("MontserratAlternates-Medium.ttf");
+}
+
 // Общие стили
 * {
     margin: 0;
@@ -15,7 +20,7 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'MontserratAlternates';
     background-color: @bg-color;
     color: @text-color;
 }
@@ -37,14 +42,9 @@ header {
     text-decoration: none;
 
     &-icon {
-        width: 40px;
-        height: 40px;
-        background: @white;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 24px;
+        img {
+            width: 50px;
+        }
     }
 
     &-text {
@@ -276,7 +276,6 @@ nav ul {
 
 .error-message {
     text-align: center;
-    padding: 40px 20px;
     color: #d9534f;
     font-size: 16px;
     grid-column: 1 / -1;
@@ -312,10 +311,9 @@ nav ul li {
 }
 
 .profile-icon {
-    width: 30px;
-    height: 30px;
-    background: @primary-color;
-    border-radius: 50%;
+    img {
+        width: 30px;
+    }
 }
 
 .profile-dropdown {
@@ -579,10 +577,10 @@ nav ul li {
         z-index: 2;
     }
 
-    &-1 { background-image: url('path/to/image1.jpg'); }
-    &-2 { background-image: url('path/to/image2.jpg'); }
-    &-3 { background-image: url('path/to/image3.jpg'); }
-    &-4 { background-image: url('path/to/image4.jpg'); }
+    &-1 { background-image: url('../../Resources/sl1.png'); }
+    &-2 { background-image: url('../../Resources/sl2.png'); }
+    &-3 { background-image: url('../../Resources/sl3.png'); }
+    &-4 { background-image: url('../../Resources/sl4.png'); }
 }
 
 // Заголовки секций
@@ -629,11 +627,11 @@ nav ul li {
     margin: 0 auto 15px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 
-    &.avatar-1 { background-image: url('path/to/avatar1.jpg'); }
-    &.avatar-2 { background-image: url('path/to/avatar2.jpg'); }
-    &.avatar-3 { background-image: url('path/to/avatar3.jpg'); }
-    &.avatar-4 { background-image: url('path/to/avatar4.jpg'); }
-    &.avatar-5 { background-image: url('path/to/avatar5.jpg'); }
+    &.avatar-1 { background-image: url('../../Resources/Lubov.png'); }
+    &.avatar-2 { background-image: url('../../Resources//Daria.png'); }
+    &.avatar-3 { background-image: url('../../Resources/Yulia.png'); }
+    &.avatar-4 { background-image: url('../../Resources/Alex.png'); }
+    &.avatar-5 { background-image: url('../../Resources/Sofia.png'); }
 }
 
 .author-name {
@@ -651,6 +649,25 @@ nav ul li {
 .reviews {
     font-size: 12px;
     color: @light-gray;
+}
+
+// Секция "О нас"
+.about-content {
+    background: @white;
+    padding: 30px;
+    border-radius: @border-radius;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    
+    p {
+        font-size: 16px;
+        line-height: 1.8;
+        color: @text-color;
+        margin-bottom: 15px;
+        
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
 }
 
 // Товары
@@ -696,31 +713,35 @@ nav ul li {
     background-position: center;
     background-repeat: no-repeat;
 
-    &.product-1 { background-image: url('path/to/product1.jpg'); }
-    &.product-2 { background-image: url('path/to/product2.jpg'); }
-    &.product-3 { background-image: url('path/to/product3.jpg'); }
-    &.product-4 { background-image: url('path/to/product4.jpg'); }
-    &.product-5 { background-image: url('path/to/product5.jpg'); }
-    &.product-6 { background-image: url('path/to/product6.jpg'); }
-    &.product-7 { background-image: url('path/to/product7.jpg'); }
-    &.product-8 { background-image: url('path/to/product8.jpg'); }
-    &.product-9 { background-image: url('path/to/product9.jpg'); }
-    &.product-10 { background-image: url('path/to/painting1.jpg'); }
-    &.product-11 { background-image: url('path/to/painting2.jpg'); }
-    &.product-12 { background-image: url('path/to/painting3.jpg'); }
-    &.product-13 { background-image: url('path/to/painting4.jpg'); }
-    &.product-14 { background-image: url('path/to/jewelry1.jpg'); }
-    &.product-15 { background-image: url('path/to/jewelry2.jpg'); }
-    &.product-16 { background-image: url('path/to/jewelry3.jpg'); }
-    &.product-17 { background-image: url('path/to/jewelry4.jpg'); }
-    &.product-18 { background-image: url('path/to/textile1.jpg'); }
-    &.product-19 { background-image: url('path/to/textile2.jpg'); }
-    &.product-20 { background-image: url('path/to/textile3.jpg'); }
-    &.product-21 { background-image: url('path/to/textile4.jpg'); }
-    &.product-22 { background-image: url('path/to/gift1.jpg'); }
-    &.product-23 { background-image: url('path/to/gift2.jpg'); }
-    &.product-24 { background-image: url('path/to/gift3.jpg'); }
-    &.product-25 { background-image: url('path/to/gift4.jpg'); }
+    &.product-1 { background-image: url('../../Resources/Picture1.png'); 
+        height: 400px;
+    }
+    &.product-2 { background-image: url('../../Resources/Picture2.png'); 
+        height: 400px;
+    }
+    &.product-3 { background-image: url('../../Resources/Picture3.png'); 
+        height: 400px;
+    }
+    &.product-4 { background-image: url('../../Resources/Picture4.png'); 
+        background-position: 0 -600px;
+        height: 400px;
+    }
+    &.product-5 { background-image: url('../../Resources/Ceramic1.png'); }
+    &.product-6 { background-image: url('../../Resources/Ceramic2.png'); }
+    &.product-7 { background-image: url('../../Resources/Ceramic3.png'); }
+    &.product-8 { background-image: url('../../Resources/Ceramic4.png'); }
+    &.product-9 { background-image: url('../../Resources/Decor1.png'); }
+    &.product-10 { background-image: url('../../Resources/Decor2.png'); }
+    &.product-11 { background-image: url('../../Resources/Decor3.png'); }
+    &.product-12 { background-image: url('../../Resources/Decor4.png'); }
+    &.product-13 { background-image: url('../../Resources/Textil1.png'); }
+    &.product-14 { background-image: url('../../Resources/Textil2.png'); }
+    &.product-15 { background-image: url('../../Resources/Textil3.png'); }
+    &.product-16 { background-image: url('../../Resources/Textil4.png'); }
+    &.product-17 { background-image: url('../../Resources/Gift1.png'); }
+    &.product-18 { background-image: url('../../Resources/Gift2.png'); }
+    &.product-19 { background-image: url('../../Resources/Gift3.png'); }
+    &.product-20 { background-image: url('../../Resources/Gift4.png'); }
 }
 
 .product-info {
@@ -791,6 +812,7 @@ footer {
     }
 
     p, a {
+        display: flex;
         font-size: 14px;
         line-height: 1.8;
         color: @white;
@@ -800,4 +822,9 @@ footer {
     a:hover {
         opacity: 0.8;
     }
+
+    img {
+        width: 30px;
+        margin-right: 10px;
+    };
 }

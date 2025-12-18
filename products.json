@@ -1,192 +1,192 @@
 {
   "paintings": [
     {
-      "id": 10,
+      "id": 1,
       "title": "Картина «Весенний пейзаж»",
       "price": 8000,
       "author": "Александр",
       "description": "Яркая масляная живопись с изображением весеннего леса. Работа выполнена на холсте.",
-      "image": "path/to/painting1.jpg",
-      "imageClass": "product-10"
-    },
-    {
-      "id": 11,
-      "title": "Картина «Городские огни»",
-      "price": 12000,
-      "author": "София",
-      "description": "Абстрактная композиция с видом ночного города. Акрил на холсте.",
-      "image": "path/to/painting2.jpg",
-      "imageClass": "product-11"
-    },
-    {
-      "id": 12,
-      "title": "Картина «Морской бриз»",
-      "price": 9500,
-      "author": "Александр",
-      "description": "Реалистичное изображение морского побережья на закате. Масло, холст.",
-      "image": "path/to/painting3.jpg",
-      "imageClass": "product-12"
-    },
-    {
-      "id": 13,
-      "title": "Картина «Натюрморт»",
-      "price": 6500,
-      "author": "София",
-      "description": "Классический натюрморт с фруктами и керамикой. Выполнен маслом.",
-      "image": "path/to/painting4.jpg",
-      "imageClass": "product-13"
-    }
-  ],
-  "ceramics": [
-    {
-      "id": 1,
-      "title": "Набор тарелок «Берёзки»",
-      "price": 2000,
-      "author": "Дарья",
-      "description": "Комплект посуды — настоящее воплощение лес. Нужных размеров, потрясающей нарисовка, красивая отдельная зелёным и синим!",
-      "image": "path/to/product1.jpg",
+      "image": "Resources/Picture1.png",
       "imageClass": "product-1"
     },
     {
       "id": 2,
-      "title": "Набор посуды классическая глина",
-      "price": 5500,
-      "author": "Анастасия",
-      "description": "Простенько, красиво керамика очень прочная и функциональная. Глиняный отделкой — красиво для тела, всем рекомендую использовать!",
-      "image": "path/to/product2.jpg",
+      "title": "Картина «Городские огни»",
+      "price": 12000,
+      "author": "София",
+      "description": "Абстрактная композиция с видом ночного города. Акрил на холсте.",
+      "image": "Resources/Picture2.png",
       "imageClass": "product-2"
     },
     {
       "id": 3,
-      "title": "Чайный сервиз «Ипрелянка»",
-      "price": 3500,
-      "author": "Мария",
-      "description": "Лёгкий, с красивым цветочными узорами — бутово выработанно из натурального хорошего материала и раскрыто Бог тюльпаны заботах Богатиров",
-      "image": "path/to/product3.jpg",
+      "title": "Картина «Морской бриз»",
+      "price": 9500,
+      "author": "Александр",
+      "description": "Реалистичное изображение морского побережья на закате. Масло, холст.",
+      "image": "Resources/Picture3.png",
       "imageClass": "product-3"
     },
     {
       "id": 4,
+      "title": "Картина «Натюрморт»",
+      "price": 6500,
+      "author": "София",
+      "description": "Классический натюрморт с фруктами и керамикой. Выполнен маслом.",
+      "image": "Resources/Picture4.png",
+      "imageClass": "product-4"
+    }
+  ],
+  "ceramics": [
+    {
+      "id": 5,
+      "title": "Набор тарелок «Берёзки»",
+      "price": 2000,
+      "author": "Дарья",
+      "description": "Комплект посуды — настоящее воплощение лес. Нужных размеров, потрясающей нарисовка, красивая отдельная зелёным и синим!",
+      "image": "Resources/Ceramic1.png",
+      "imageClass": "product-5"
+    },
+    {
+      "id": 6,
+      "title": "Набор посуды классическая глина",
+      "price": 5500,
+      "author": "Анастасия",
+      "description": "Простенько, красиво керамика очень прочная и функциональная. Глиняный отделкой — красиво для тела, всем рекомендую использовать!",
+      "image": "Resources/Ceramic2.png",
+      "imageClass": "product-6"
+    },
+    {
+      "id": 7,
+      "title": "Чайный сервиз «Ипрелянка»",
+      "price": 3500,
+      "author": "Мария",
+      "description": "Лёгкий, с красивым цветочными узорами — бутово выработанно из натурального хорошего материала и раскрыто Бог тюльпаны заботах Богатиров",
+      "image": "Resources/Ceramic3.png",
+      "imageClass": "product-7"
+    },
+    {
+      "id": 8,
       "title": "Керамическая ваза",
       "price": 1800,
       "author": "Дарья",
       "description": "Элегантная ваза ручной работы с уникальным дизайном. Идеально подходит для украшения интерьера.",
-      "image": "path/to/product4.jpg",
-      "imageClass": "product-4"
+      "image": "Resources/Ceramic4.png",
+      "imageClass": "product-8"
     }
   ],
   "jewelry": [
     {
-      "id": 14,
+      "id": 9,
       "title": "Серебряное кольцо",
       "price": 3500,
       "author": "Юлия",
       "description": "Изящное кольцо ручной работы из серебра 925 пробы с натуральным камнем.",
-      "image": "path/to/jewelry1.jpg",
-      "imageClass": "product-14"
+      "image": "Resources/Decor1.png",
+      "imageClass": "product-9"
     },
     {
-      "id": 15,
+      "id": 10,
       "title": "Браслет «Этника»",
       "price": 2800,
       "author": "Юлия",
       "description": "Яркий браслет с этническими мотивами. Выполнен из натуральных бусин.",
-      "image": "path/to/jewelry2.jpg",
-      "imageClass": "product-15"
+      "image": "Resources/Decor2.png",
+      "imageClass": "product-10"
     },
     {
-      "id": 16,
+      "id": 11,
       "title": "Серьги «Капли»",
       "price": 2200,
       "author": "Юлия",
       "description": "Легкие серьги из серебра с подвесками в форме капель.",
-      "image": "path/to/jewelry3.jpg",
-      "imageClass": "product-16"
+      "image": "Resources/Decor3.png",
+      "imageClass": "product-11"
     },
     {
-      "id": 17,
+      "id": 12,
       "title": "Кулон «Древо жизни»",
       "price": 4200,
       "author": "Юлия",
       "description": "Символичный кулон из серебра с филигранным узором древа жизни.",
-      "image": "path/to/jewelry4.jpg",
-      "imageClass": "product-17"
+      "image": "Resources/Decor4.png",
+      "imageClass": "product-12"
     }
   ],
   "textiles": [
     {
-      "id": 18,
+      "id": 13,
       "title": "Льняная скатерть",
       "price": 3200,
       "author": "Любовь Степановна",
       "description": "Скатерть из натурального льна с ручной вышивкой. Размер 150x200 см.",
-      "image": "path/to/textile1.jpg",
-      "imageClass": "product-18"
+      "image": "Resources/Textil1.png",
+      "imageClass": "product-13"
     },
     {
-      "id": 19,
+      "id": 14,
       "title": "Вязаный плед",
       "price": 5500,
       "author": "Любовь Степановна",
       "description": "Теплый плед крупной вязки из шерсти мериноса. Размер 120x150 см.",
-      "image": "path/to/textile2.jpg",
-      "imageClass": "product-19"
+      "image": "Resources/Textil2.png",
+      "imageClass": "product-14"
     },
     {
-      "id": 20,
+      "id": 15,
       "title": "Декоративные подушки",
       "price": 1800,
       "author": "Любовь Степановна",
       "description": "Комплект из 2-х подушек с вышивкой в народном стиле. Размер 40x40 см.",
-      "image": "path/to/textile3.jpg",
-      "imageClass": "product-20"
+      "image": "Resources/Textil3.png",
+      "imageClass": "product-15"
     },
     {
-      "id": 21,
+      "id": 16,
       "title": "Кухонные полотенца",
       "price": 1200,
       "author": "Любовь Степановна",
       "description": "Набор из 3-х льняных полотенец с традиционными узорами.",
-      "image": "path/to/textile4.jpg",
-      "imageClass": "product-21"
+      "image": "Resources/Textil4.png",
+      "imageClass": "product-16"
     }
   ],
   "gifts": [
     {
-      "id": 22,
+      "id": 17,
       "title": "Подарочный набор «Чаепитие»",
       "price": 6500,
       "author": "Дарья",
       "description": "Набор из чайника, 4 чашек и блюдца. Упакован в красивую коробку.",
-      "image": "path/to/gift1.jpg",
-      "imageClass": "product-22"
+      "image": "Resources/Gift1.png",
+      "imageClass": "product-17"
     },
     {
-      "id": 23,
+      "id": 18,
       "title": "Сувенир «Оберег»",
       "price": 1500,
       "author": "Мария",
       "description": "Декоративный оберег ручной работы с традиционными символами.",
-      "image": "path/to/gift2.jpg",
-      "imageClass": "product-23"
+      "image": "Resources/Gift2.png",
+      "imageClass": "product-18"
     },
     {
-      "id": 24,
+      "id": 19,
       "title": "Шкатулка резная",
       "price": 4800,
       "author": "Александр",
       "description": "Деревянная шкатулка с ручной резьбой для хранения украшений.",
-      "image": "path/to/gift3.jpg",
-      "imageClass": "product-24"
+      "image": "Resources/Gift3.png",
+      "imageClass": "product-19"
     },
     {
-      "id": 25,
+      "id": 20,
       "title": "Набор «Для кухни»",
       "price": 3800,
       "author": "Анастасия",
       "description": "Керамический набор: солонка, перечница, подставка под яйца.",
-      "image": "path/to/gift4.jpg",
-      "imageClass": "product-25"
+      "image": "Resources/Gift4.png",
+      "imageClass": "product-20"
     }
   ]
 }

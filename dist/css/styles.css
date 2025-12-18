@@ -1,10 +1,14 @@
+@font-face {
+  font-family: 'MontserratAlternates';
+  src: url("MontserratAlternates-Medium.ttf");
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'MontserratAlternates';
   background-color: #F8F4ED;
   color: #3C352E;
 }
@@ -22,15 +26,8 @@ header {
   color: #fff;
   text-decoration: none;
 }
-.logo-icon {
-  width: 40px;
-  height: 40px;
-  background: #fff;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
+.logo-icon img {
+  width: 50px;
 }
 .logo-text {
   font-size: 28px;
@@ -226,7 +223,6 @@ nav ul li a:hover {
 }
 .error-message {
   text-align: center;
-  padding: 40px 20px;
   color: #d9534f;
   font-size: 16px;
   grid-column: 1 / -1;
@@ -255,11 +251,8 @@ nav ul li {
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-.profile-icon {
+.profile-icon img {
   width: 30px;
-  height: 30px;
-  background: #7A8B6A;
-  border-radius: 50%;
 }
 .profile-dropdown {
   position: absolute;
@@ -499,16 +492,16 @@ nav ul li {
   z-index: 2;
 }
 .slide-1 {
-  background-image: url('path/to/image1.jpg');
+  background-image: url('../../Resources/sl1.png');
 }
 .slide-2 {
-  background-image: url('path/to/image2.jpg');
+  background-image: url('../../Resources/sl2.png');
 }
 .slide-3 {
-  background-image: url('path/to/image3.jpg');
+  background-image: url('../../Resources/sl3.png');
 }
 .slide-4 {
-  background-image: url('path/to/image4.jpg');
+  background-image: url('../../Resources/sl4.png');
 }
 .section-title {
   font-size: 32px;
@@ -549,19 +542,19 @@ nav ul li {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 .author-avatar.avatar-1 {
-  background-image: url('path/to/avatar1.jpg');
+  background-image: url('../../Resources/Lubov.png');
 }
 .author-avatar.avatar-2 {
-  background-image: url('path/to/avatar2.jpg');
+  background-image: url('../../Resources//Daria.png');
 }
 .author-avatar.avatar-3 {
-  background-image: url('path/to/avatar3.jpg');
+  background-image: url('../../Resources/Yulia.png');
 }
 .author-avatar.avatar-4 {
-  background-image: url('path/to/avatar4.jpg');
+  background-image: url('../../Resources/Alex.png');
 }
 .author-avatar.avatar-5 {
-  background-image: url('path/to/avatar5.jpg');
+  background-image: url('../../Resources/Sofia.png');
 }
 .author-name {
   font-size: 14px;
@@ -576,6 +569,21 @@ nav ul li {
 .reviews {
   font-size: 12px;
   color: #888;
+}
+.about-content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.about-content p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #3C352E;
+  margin-bottom: 15px;
+}
+.about-content p:last-child {
+  margin-bottom: 0;
 }
 .category-section {
   margin-top: 60px;
@@ -615,79 +623,69 @@ nav ul li {
   background-repeat: no-repeat;
 }
 .product-image.product-1 {
-  background-image: url('path/to/product1.jpg');
+  background-image: url('../../Resources/Picture1.png');
+  height: 400px;
 }
 .product-image.product-2 {
-  background-image: url('path/to/product2.jpg');
+  background-image: url('../../Resources/Picture2.png');
+  height: 400px;
 }
 .product-image.product-3 {
-  background-image: url('path/to/product3.jpg');
+  background-image: url('../../Resources/Picture3.png');
+  height: 400px;
 }
 .product-image.product-4 {
-  background-image: url('path/to/product4.jpg');
+  background-image: url('../../Resources/Picture4.png');
+  background-position: 0 -600px;
+  height: 400px;
 }
 .product-image.product-5 {
-  background-image: url('path/to/product5.jpg');
+  background-image: url('../../Resources/Ceramic1.png');
 }
 .product-image.product-6 {
-  background-image: url('path/to/product6.jpg');
+  background-image: url('../../Resources/Ceramic2.png');
 }
 .product-image.product-7 {
-  background-image: url('path/to/product7.jpg');
+  background-image: url('../../Resources/Ceramic3.png');
 }
 .product-image.product-8 {
-  background-image: url('path/to/product8.jpg');
+  background-image: url('../../Resources/Ceramic4.png');
 }
 .product-image.product-9 {
-  background-image: url('path/to/product9.jpg');
+  background-image: url('../../Resources/Decor1.png');
 }
 .product-image.product-10 {
-  background-image: url('path/to/painting1.jpg');
+  background-image: url('../../Resources/Decor2.png');
 }
 .product-image.product-11 {
-  background-image: url('path/to/painting2.jpg');
+  background-image: url('../../Resources/Decor3.png');
 }
 .product-image.product-12 {
-  background-image: url('path/to/painting3.jpg');
+  background-image: url('../../Resources/Decor4.png');
 }
 .product-image.product-13 {
-  background-image: url('path/to/painting4.jpg');
+  background-image: url('../../Resources/Textil1.png');
 }
 .product-image.product-14 {
-  background-image: url('path/to/jewelry1.jpg');
+  background-image: url('../../Resources/Textil2.png');
 }
 .product-image.product-15 {
-  background-image: url('path/to/jewelry2.jpg');
+  background-image: url('../../Resources/Textil3.png');
 }
 .product-image.product-16 {
-  background-image: url('path/to/jewelry3.jpg');
+  background-image: url('../../Resources/Textil4.png');
 }
 .product-image.product-17 {
-  background-image: url('path/to/jewelry4.jpg');
+  background-image: url('../../Resources/Gift1.png');
 }
 .product-image.product-18 {
-  background-image: url('path/to/textile1.jpg');
+  background-image: url('../../Resources/Gift2.png');
 }
 .product-image.product-19 {
-  background-image: url('path/to/textile2.jpg');
+  background-image: url('../../Resources/Gift3.png');
 }
 .product-image.product-20 {
-  background-image: url('path/to/textile3.jpg');
-}
-.product-image.product-21 {
-  background-image: url('path/to/textile4.jpg');
-}
-.product-image.product-22 {
-  background-image: url('path/to/gift1.jpg');
-}
-.product-image.product-23 {
-  background-image: url('path/to/gift2.jpg');
-}
-.product-image.product-24 {
-  background-image: url('path/to/gift3.jpg');
-}
-.product-image.product-25 {
-  background-image: url('path/to/gift4.jpg');
+  background-image: url('../../Resources/Gift4.png');
 }
 .product-info {
   padding: 15px;
@@ -747,6 +745,7 @@ footer {
 }
 .footer-section p,
 .footer-section a {
+  display: flex;
   font-size: 14px;
   line-height: 1.8;
   color: #fff;
@@ -754,5 +753,9 @@ footer {
 }
 .footer-section a:hover {
   opacity: 0.8;
+}
+.footer-section img {
+  width: 30px;
+  margin-right: 10px;
 }
 /*# sourceMappingURL=styles.css.map */
